@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         tool = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(tool);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
         tab = (TabLayout) findViewById(R.id.tabLayout);
         mypage = (ViewPager) findViewById(R.id.mypager);
