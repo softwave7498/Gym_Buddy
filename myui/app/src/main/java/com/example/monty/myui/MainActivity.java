@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TimePicker;
 import  android.content.res.Configuration;
+import android.support.v7.widget.Toolbar;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -28,15 +29,20 @@ public class MainActivity extends AppCompatActivity {
     ViewPager page;
     ViewPager mypage;
     ViewPager image_page;
-
+    Toolbar tool;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        tool = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(tool);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tab = (TabLayout) findViewById(R.id.tabLayout);
         mypage = (ViewPager) findViewById(R.id.mypager);
         mypage.setAdapter(new myPageAdapter(getSupportFragmentManager()));
+
         tab.setupWithViewPager(mypage);
         tab.setTabMode(TabLayout.MODE_SCROLLABLE);
         tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -59,13 +65,13 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-    };
+};
 
 
 
 class myPageAdapter extends FragmentPagerAdapter {
 
-    String data[] = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+    String data[] ={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
 
     public myPageAdapter(FragmentManager fm) {
         super(fm);
