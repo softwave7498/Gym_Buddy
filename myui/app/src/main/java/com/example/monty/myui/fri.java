@@ -17,8 +17,8 @@ public class fri extends Fragment {
 
     myownadapter md;
     RecyclerView rec;
-    int image_rec[] = {R.drawable.militry_press,R.drawable.dumbell_press,R.drawable.seated_militry_press,R.drawable.dumbell_lateral_raises, R.drawable.cable_front_raises, R.drawable.up_right_rows, R.drawable.barbell_sqates, R.drawable.front_barbell_squat,R.drawable.calves_leg_press,R.drawable.sumo_squat,R.drawable.squats};
-    String name[] ={"Militry Press","Dumbell Press","Seated Militry Press","Dumbell Lateral Raises","Cable Front Raises","Up Right Rows","Barell Squats", "Front Barell Squats","calves leg Press","Sumo Squat","squats"};
+    int image_rec[] = {R.drawable.dumbell_curls,R.drawable.preachers_curls,R.drawable.cable_curls,R.drawable.concentration_curls,R.drawable.triceps_extention_curls,R.drawable.triceps_extention_cable,R.drawable.militry_press,R.drawable.dumbell_press,R.drawable.seated_militry_press,R.drawable.dumbell_lateral_raises, R.drawable.cable_front_raises, R.drawable.up_right_rows,R.drawable.crunch};
+    String name[] ={"Dumbell Curls","Preacher Curls","Cable Curls","Concentration Curls","Triceps Extention Curls","Cable Triceps Extention","Militry Press","Dumbell Press","Seated Militry Press","Dumbell Lateral Raises","Cable Front Raises","Up Right Rows","Crunches"};
     String sets= "3 sets of 20 Repetations";
 
     public fri() {

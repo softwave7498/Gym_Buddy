@@ -17,8 +17,8 @@ public class wed extends Fragment {
 
     RecyclerView rec;
     myownadapter md;
-    int image_rec[] = {R.drawable.chin_ups,R.drawable.dumbell_curls,R.drawable.preachers_curls,R.drawable.cable_curls,R.drawable.concentration_curls,R.drawable.triceps_extention_curls,R.drawable.triceps_extention_cable,R.drawable.close_grip_bench_press,R.drawable.narrow_grip_push_up};
-    String name[] ={"Chin Ups","Dumbell Curls","Preacher Curls","Cable curls","Concentration Curls","Triceps Extention Curls","cable Triceps Extention","Close grip Bench Press","Narrow Grip Push Ups"};
+    int image_rec[] = {R.drawable.latpulldown,R.drawable.seated_cable_row,R.drawable.close_grip_front_lat_pulldown,R.drawable.chin_ups,R.drawable.close_grip_bench_press,R.drawable.narrow_grip_push_up, R.drawable.barbell_sqates, R.drawable.front_barbell_squat,R.drawable.calves_leg_press,R.drawable.sumo_squat,R.drawable.squats,R.drawable.crunch};
+    String name[] ={"Lat Pull Downs","Seated Cable rows","Close Grip Front Lat Pull Downs","Chin Ups","Close grip Bench Press","Narrow Grip Push Ups","Barell Squats", "Front Barell Squats","calves leg Press","Sumo Squat","squats","Crunches"};
 
     String sets= "3 sets of 20 Repetations";
 

@@ -17,8 +17,8 @@ public class thu extends Fragment {
 
     myownadapter md;
     RecyclerView rec;
-    int image_rec[] = {R.drawable.pushup,R.drawable.pullups,R.drawable.flat_bench_press,R.drawable.inclined_dumbell_press,R.drawable.decline_doumblle_press,R.drawable.doumbell_bench_fly,R.drawable.chestdips,R.drawable.dumbell_bent_arm_pullover,R.drawable.latpulldown,R.drawable.seated_cable_row,R.drawable.close_grip_front_lat_pulldown};
-    String name[] ={"Push Ups","Pull Ups","Flat Bench Press","Incline Dumbell Press","Decline Press","Incline Bench Dumbell Fly","Chest Dips","Dumbell Bent Arm Pullover","Lat Pull Downs","Seated Cable rows","Close Grip Front Lat Pull Downs"};
+    int image_rec[] = {R.drawable.pushup,R.drawable.pullups,R.drawable.flat_bench_press,R.drawable.inclined_dumbell_press,R.drawable.decline_doumblle_press,R.drawable.doumbell_bench_fly,R.drawable.chestdips,R.drawable.dumbell_bent_arm_pullover,R.drawable.crunch};
+    String name[] ={"Push Ups","Pull Ups","Flat Bench Press","Incline Dumbell Press","Decline Press","Incline Bench Dumbell Fly","Chest Dips","Dumbell Bent Arm Pullover","Crunches"};
     String sets= "3 sets of 20 Repetations";
 
     public thu() {

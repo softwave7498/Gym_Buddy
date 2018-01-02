@@ -1,5 +1,4 @@
 package com.example.monty.myui;
-
 import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
@@ -8,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -27,7 +24,6 @@ public class myownadapter extends RecyclerView.Adapter {
         img = i;
         s1= data;
         s2=s;
-
     }
 
     private class myownholder extends RecyclerView.ViewHolder
@@ -45,14 +41,16 @@ public class myownadapter extends RecyclerView.Adapter {
     }
 
     @Override
-    public myownholder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public myownholder onCreateViewHolder(ViewGroup parent, int viewType)
+    {
         LayoutInflater inflater = LayoutInflater.from(ctx);
         View myownview = inflater.inflate(R.layout.exercise,parent,false);
         return new myownholder(myownview);
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
+    {
         myownholder mh = (myownholder)holder;
         mh.t1.setText(s1[position].toString());
         mh.t2.setText(s2.toString());

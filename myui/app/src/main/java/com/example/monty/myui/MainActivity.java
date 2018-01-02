@@ -1,5 +1,4 @@
 package com.example.monty.myui;
-
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -101,16 +100,18 @@ class myPageAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getCount()
+    {
         return data.length;
     }
 
 
     @Override
-    public CharSequence getPageTitle(int position) {
+    public CharSequence getPageTitle(int position)
+    {
         return data[position];
     }
 };
 
-;
+
 

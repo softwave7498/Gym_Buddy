@@ -4,14 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/Black"
+    android:background="@color/grey"
     >
     <ImageView
     android:layout_width="match_parent"
     android:layout_height="120dp"
-    android:layout_marginRight="10dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
     android:background="@color/White"
      android:id="@+id/image_exe"
     />
@@ -20,8 +20,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@color/colorPrimary"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
         >
         <TextView
             android:layout_width="match_parent"
