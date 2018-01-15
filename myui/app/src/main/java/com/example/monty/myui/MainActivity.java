@@ -1,4 +1,3 @@
-/*created by mohit chug on 1/1/2018*/
 package com.example.monty.myui;
 import android.content.Context;
 import android.content.Intent;
@@ -24,6 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.TimePicker;
 import  android.content.res.Configuration;
 import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     ViewPager image_page;
     Toolbar tool;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -64,39 +65,11 @@ public class MainActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
-
         });
 
 
-    };
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId())
-        {
-            case R.id.notes:
-                Intent intent1 = new Intent(this,notes.class);
-                startActivity(intent1);
-                break;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
-        return super.onOptionsItemSelected(item);
     }
 };
-
-
-
-
-
 
 
 
@@ -143,6 +116,7 @@ class myPageAdapter extends FragmentPagerAdapter {
     {
         return data[position];
     }
+
 };
 
 
