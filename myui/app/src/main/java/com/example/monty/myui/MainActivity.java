@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import  android.content.res.Configuration;
 import android.support.v7.widget.Toolbar;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     ViewPager mypage;
     ViewPager image_page;
     Toolbar tool;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -68,6 +70,27 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.about:
+                Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(i);
+                break;
+            default: break;
+        }
+        return true;
     }
 };
 
