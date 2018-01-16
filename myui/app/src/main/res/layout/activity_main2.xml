@@ -64,13 +64,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView9"
-        android:layout_alignStart="@+id/textView9"
         android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:text="About DSC"
+        android:text="@string/abt_dsc"
         android:textColor="@color/Black"
-        android:textSize="30sp"
+        android:textSize="@dimen/heading_big"
         android:textStyle="bold" />
 
     <TextView
@@ -83,7 +82,7 @@
         android:layout_marginTop="22dp"
         android:text="@string/about"
         android:textColor="@color/Black"
-        android:textSize="18sp"
+        android:textSize="@dimen/para_con"
         android:layout_margin="15dp"
         />
 
@@ -93,9 +92,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:text="Developer Student Club Lead"
+        android:text="@string/sdcl"
         android:textColor="@color/Black"
-        android:textSize="22dp"
+        android:textSize="@dimen/heading_small"
         android:textStyle="bold" />
 
     <TextView
@@ -106,7 +105,7 @@
         android:layout_centerHorizontal="true"
         android:text="Akshay Nandwana"
         android:textColor="@color/Black"
-        android:textSize="20dp"
+        android:textSize="@dimen/developer_name"
         android:fontFamily="sans-serif"
         android:layout_margin="10dp"
 
@@ -119,7 +118,7 @@
         android:layout_centerHorizontal="true"
         android:text="Application Developed By :-"
         android:textColor="@color/Black"
-        android:textSize="22dp"
+        android:textSize="@dimen/heading_small"
         android:textStyle="bold"
         />
     <TextView
@@ -130,7 +129,7 @@
         android:layout_centerHorizontal="true"
         android:text="Mohit Chug"
         android:textColor="@color/Black"
-        android:textSize="20dp"
+        android:textSize="@dimen/developer_name"
         android:layout_margin="10dp"
         android:fontFamily="sans-serif"
         />
@@ -141,9 +140,9 @@
         android:id="@+id/textView9"
         android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true"
-        android:text="Contact Us"
+        android:text="@string/contact"
         android:textColor="@color/Black"
-        android:textSize="25dp"
+        android:textSize="@dimen/heading_big"
         android:textStyle="bold"
         android:layout_margin="10dp"
         />
@@ -162,9 +161,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView10"
         android:layout_centerHorizontal="true"
-        android:text="7665738184"
+        android:text="@string/phone"
         android:textColor="@color/Black"
-        android:textSize="25dp"
+        android:textSize="@dimen/heading_big"
         android:layout_margin="10dp"
         android:layout_below="@id/imageView1" />
 
